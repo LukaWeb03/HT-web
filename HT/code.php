@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    remote git connection test
 </body>
 </html>
