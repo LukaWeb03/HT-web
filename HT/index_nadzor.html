@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/dmuy/MDTimePicker@{version}/dist/mdtimepicker.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/dmuy/MDTimePicker@{version}/dist/mdtimepicker.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+
+    <script type="text/javascript" src=
+"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js">
+    </script>
+    
+    <title>Evidencija smjena</title>
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/logo.png" width="60" height="40" style="padding-left: 20px;">
+           </a>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index_pocetna.html" style="color: white;">Evidencija smjena</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<style>
+    * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  #row {
+    margin: 0 auto;
+    float: none;
+    padding-top: 50px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    background-color: #e20075;
+  }
+</style>
+
+</head>
+
+<body>
+        <div class="row justify-content-center" id="row">
+            <div class="column">
+                <div class="card" id="card1">
+                    <div class="card-body">
+                        <h4 class="card-title">Dežurni</h4>
+                        <br>
+                        <p>Dnevna smjena</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Izaberi</option>
+                            <option value="1">Mario Drndelić</option>
+                            <option value="2">Ivan Čale</option>
+                            <option value="3">Hrvoje Smiljanić</option>
+                            <option value="3">Nenad Janjić</option>
+                            <option value="3">Kristijan Pokupec</option>
+                            <option value="3">Emanuel Egređija</option>
+                          </select>
+                        <br>
+                        <p>Noćna smjena ‎ ‎ </p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Izaberi</option>
+                            <option value="1">Mario Drndelić</option>
+                            <option value="2">Ivan Čale</option>
+                            <option value="3">Hrvoje Smiljanić</option>
+                            <option value="3">Nenad Janjić</option>
+                            <option value="3">Kristijan Pokupec</option>
+                            <option value="3">Emanuel Egređija</option>
+                          </select>                                                                       
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" id="card1" style="padding-bottom: 66px;">
+                    <div class="card-body">
+                        <h4 class="card-title">Datum</h4>
+                        <br>
+                        <form method="post">
+                            <div class="form-group"> <!-- Date input -->
+                              <i class="fa fa-calendar"></i>
+                              <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+                            </div>
+                           </form>
+                          <br>
+                          <p>/</p>
+                          <form method="post">
+                            <div class="form-group"> <!-- Date input -->
+                              <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+                            </div>
+                           </form>
+                    </div>
+                </div>
+        </div>  
+        <div class="row justify-content-center" id="row">
+            <div class="column">
+                <div class="card" id="card1">
+                    <div class="card-body">
+                        <h4 class="card-title">EVIDENCIJA RADA APLIKACIJE</h4>
+                        <br>
+                        <p>Aplikacija</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Izaberi</option>
+                            <option value="1">SAP Web App server (spisi i agencije)</option>
+                            <option value="2">SAP produkcija</option>
+                            <option value="3">Provjera pristupa webmailu (mail.dt-one.com)</option>
+                            <option value="4">Kontrola pristupa internetu i intranetu</option>
+                            <option value="2">Obilazak sistem sala(klima)</option>
+                          </select>
+                        <br>
+                        <p>Vrijeme provjere ‎ ‎ </p>
+                            <i class="fa fa-clock-o"></i>
+                            <input class="timepicker" placeholder="HH:mm" type="text"/>
+                          <br>
+                          <div class="form-outline">
+                            <label class="form-label" for="textAreaExample">Status provjere</label>
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Izaberi</option>
+                              <option value="1">Sve u redu</option>
+                              <option value="1">Greška</option>
+                            </select>
+                            <br>
+                            <br>
+                            <textarea class="form-control" id="textAreaExample1" placeholder="Izvještaj greške" rows="4"></textarea>
+                            <br>
+                            <button class="btn btn-outline-light" type="submit">SPREMI</button>
+                            <button class="btn btn-outline-light" type="submit">DODAJ +</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" id="card1" style="padding-bottom: 152px;">
+                    <div class="card-body">
+                        <h4 class="card-title">KOLOKACIJA - SKLADIŠTE</h4>
+                        <br>
+                        <textarea class="form-control" id="textAreaExample1" placeholder="Kolokacija" rows="4"></textarea>
+                        <br>
+                        <textarea class="form-control" id="textAreaExample1" placeholder="Skladište" rows="4"></textarea>
+                        <br>
+                        <button class="btn btn-outline-light" type="submit">SPREMI</button>
+                        <button class="btn btn-outline-light" type="submit">DODAJ +</button>
+                    </div>
+                </div>
+        </div>
+        <div class="jumbotron" style="padding: 50px; background-color: #e20075; margin-top: 50px;">
+            <p style="text-align: center; text-decoration: solid; ">EVIDENCIJA SMJENE</p>
+        </div>
+        
+</body>
+</html>
+
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+
+<!--Font Awesome (added because you use icons in your prepend/append)-->
+<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<script>
+	$(document).ready(function(){
+		var date_input=$('input[name="date"]'); //our date input has the name "date"
+		var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		date_input.datepicker({
+			format: 'mm/dd/yyyy',
+			container: container,
+			todayHighlight: true,
+			autoclose: true,
+		})
+	})
+
+
+mdtimepicker('.timepicker', { format: 'hh:mm' });
+// Initialize time picker
+</script>
